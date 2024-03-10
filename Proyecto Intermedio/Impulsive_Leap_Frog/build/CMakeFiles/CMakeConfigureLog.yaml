@@ -1,0 +1,273 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake:233 (message)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      The system is: Windows - 10.0.19045 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      Microsoft (R) Build Engine versión 16.11.2+f32259642 para .NET Framework
+      Copyright (C) Microsoft Corporation. Todos los derechos reservados.
+      
+      Compilación iniciada a las 05/11/2023 13:57:21.
+      Proyecto "D:\\Personal\\Libros\\Academia\\Proyectos\\Movimiento Browniano\\Codigo\\Impulsive_Leap_Frog\\build\\CMakeFiles\\3.28.0-rc3\\CompilerIdC\\CompilerIdC.vcxproj" en nodo 1 (destinos predeterminados).
+      PrepareForBuild:
+        Creando directorio "Debug\\".
+        Creando directorio "Debug\\CompilerIdC.tlog\\".
+      InitializeBuildStatus:
+        Se creará "Debug\\CompilerIdC.tlog\\unsuccessfulbuild" porque se especificó "AlwaysCreate".
+      VcpkgTripletSelection:
+        Using triplet "x64-windows" from "C:\\Program Files\\vcpkg\\installed\\x64-windows\\"
+        Using normalized configuration "Release"
+      ClCompile:
+        C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Program Files\\vcpkg\\installed\\x64-windows\\include" /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc142.pdb" /external:W0 /Gd /TC /FC /errorReport:queue CMakeCCompilerId.c
+        CMakeCCompilerId.c
+      Link:
+        C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\\Program Files\\vcpkg\\installed\\x64-windows\\lib" /LIBPATH:"C:\\Program Files\\vcpkg\\installed\\x64-windows\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib "C:\\Program Files\\vcpkg\\installed\\x64-windows\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdC.lib" /MACHINE:X64 Debug\\CMakeCCompilerId.obj
+        CompilerIdC.vcxproj -> D:\\Personal\\Libros\\Academia\\Proyectos\\Movimiento Browniano\\Codigo\\Impulsive_Leap_Frog\\build\\CMakeFiles\\3.28.0-rc3\\CompilerIdC\\CompilerIdC.exe
+      AppLocalFromInstalled:
+        pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Program Files\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "D:\\Personal\\Libros\\Academia\\Proyectos\\Movimiento Browniano\\Codigo\\Impulsive_Leap_Frog\\build\\CMakeFiles\\3.28.0-rc3\\CompilerIdC\\CompilerIdC.exe" "C:\\Program Files\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdC.tlog\\CompilerIdC.write.1u.tlog" "Debug\\vcpkg.applocal.log"
+        "pwsh.exe" no se reconoce como un comando interno o externo,
+        programa o archivo por lotes ejecutable.
+        El comando "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Program Files\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "D:\\Personal\\Libros\\Academia\\Proyectos\\Movimiento Browniano\\Codigo\\Impulsive_Leap_Frog\\build\\CMakeFiles\\3.28.0-rc3\\CompilerIdC\\CompilerIdC.exe" "C:\\Program Files\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdC.tlog\\CompilerIdC.write.1u.tlog" "Debug\\vcpkg.applocal.log"" salió con el código 9009.
+        "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\Program Files\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "D:\\Personal\\Libros\\Academia\\Proyectos\\Movimiento Browniano\\Codigo\\Impulsive_Leap_Frog\\build\\CMakeFiles\\3.28.0-rc3\\CompilerIdC\\CompilerIdC.exe" "C:\\Program Files\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdC.tlog\\CompilerIdC.write.1u.tlog" "Debug\\vcpkg.applocal.log"
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_C_COMPILER=C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        Se eliminará el archivo "Debug\\CompilerIdC.tlog\\unsuccessfulbuild".
+        Aplicando tarea Touch a "Debug\\CompilerIdC.tlog\\CompilerIdC.lastbuildstate".
+      Compilación del proyecto terminada "D:\\Personal\\Libros\\Academia\\Proyectos\\Movimiento Browniano\\Codigo\\Impulsive_Leap_Frog\\build\\CMakeFiles\\3.28.0-rc3\\CompilerIdC\\CompilerIdC.vcxproj" (destinos predeterminados).
+      
+      Compilación correcta.
+          0 Advertencia(s)
+          0 Errores
+      
+      Tiempo transcurrido 00:00:02.33
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+      
+      The C compiler identification is MSVC, found in:
+        D:/Personal/Libros/Academia/Proyectos/Movimiento Browniano/Codigo/Impulsive_Leap_Frog/build/CMakeFiles/3.28.0-rc3/CompilerIdC/CompilerIdC.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      Microsoft (R) Build Engine versión 16.11.2+f32259642 para .NET Framework
+      Copyright (C) Microsoft Corporation. Todos los derechos reservados.
+      
+      Compilación iniciada a las 05/11/2023 13:57:24.
+      Proyecto "D:\\Personal\\Libros\\Academia\\Proyectos\\Movimiento Browniano\\Codigo\\Impulsive_Leap_Frog\\build\\CMakeFiles\\3.28.0-rc3\\CompilerIdCXX\\CompilerIdCXX.vcxproj" en nodo 1 (destinos predeterminados).
+      PrepareForBuild:
+        Creando directorio "Debug\\".
+        Creando directorio "Debug\\CompilerIdCXX.tlog\\".
+      InitializeBuildStatus:
+        Se creará "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild" porque se especificó "AlwaysCreate".
+      VcpkgTripletSelection:
+        Using triplet "x64-windows" from "C:\\Program Files\\vcpkg\\installed\\x64-windows\\"
+        Using normalized configuration "Release"
+      ClCompile:
+        C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Program Files\\vcpkg\\installed\\x64-windows\\include" /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc142.pdb" /external:W0 /Gd /TP /FC /errorReport:queue CMakeCXXCompilerId.cpp
+        CMakeCXXCompilerId.cpp
+      Link:
+        C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\\Program Files\\vcpkg\\installed\\x64-windows\\lib" /LIBPATH:"C:\\Program Files\\vcpkg\\installed\\x64-windows\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib "C:\\Program Files\\vcpkg\\installed\\x64-windows\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:X64 Debug\\CMakeCXXCompilerId.obj
+        CompilerIdCXX.vcxproj -> D:\\Personal\\Libros\\Academia\\Proyectos\\Movimiento Browniano\\Codigo\\Impulsive_Leap_Frog\\build\\CMakeFiles\\3.28.0-rc3\\CompilerIdCXX\\CompilerIdCXX.exe
+      AppLocalFromInstalled:
+        pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Program Files\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "D:\\Personal\\Libros\\Academia\\Proyectos\\Movimiento Browniano\\Codigo\\Impulsive_Leap_Frog\\build\\CMakeFiles\\3.28.0-rc3\\CompilerIdCXX\\CompilerIdCXX.exe" "C:\\Program Files\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.write.1u.tlog" "Debug\\vcpkg.applocal.log"
+        "pwsh.exe" no se reconoce como un comando interno o externo,
+        programa o archivo por lotes ejecutable.
+        El comando "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Program Files\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "D:\\Personal\\Libros\\Academia\\Proyectos\\Movimiento Browniano\\Codigo\\Impulsive_Leap_Frog\\build\\CMakeFiles\\3.28.0-rc3\\CompilerIdCXX\\CompilerIdCXX.exe" "C:\\Program Files\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.write.1u.tlog" "Debug\\vcpkg.applocal.log"" salió con el código 9009.
+        "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\Program Files\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "D:\\Personal\\Libros\\Academia\\Proyectos\\Movimiento Browniano\\Codigo\\Impulsive_Leap_Frog\\build\\CMakeFiles\\3.28.0-rc3\\CompilerIdCXX\\CompilerIdCXX.exe" "C:\\Program Files\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.write.1u.tlog" "Debug\\vcpkg.applocal.log"
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_CXX_COMPILER=C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        Se eliminará el archivo "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
+        Aplicando tarea Touch a "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.lastbuildstate".
+      Compilación del proyecto terminada "D:\\Personal\\Libros\\Academia\\Proyectos\\Movimiento Browniano\\Codigo\\Impulsive_Leap_Frog\\build\\CMakeFiles\\3.28.0-rc3\\CompilerIdCXX\\CompilerIdCXX.vcxproj" (destinos predeterminados).
+      
+      Compilación correcta.
+          0 Advertencia(s)
+          0 Errores
+      
+      Tiempo transcurrido 00:00:02.00
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+      
+      The CXX compiler identification is MSVC, found in:
+        D:/Personal/Libros/Academia/Proyectos/Movimiento Browniano/Codigo/Impulsive_Leap_Frog/build/CMakeFiles/3.28.0-rc3/CompilerIdCXX/CompilerIdCXX.exe
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "D:/Personal/Libros/Academia/Proyectos/Movimiento Browniano/Codigo/Impulsive_Leap_Frog/build/CMakeFiles/CMakeScratch/TryCompile-cdox3r"
+      binary: "D:/Personal/Libros/Academia/Proyectos/Movimiento Browniano/Codigo/Impulsive_Leap_Frog/build/CMakeFiles/CMakeScratch/TryCompile-cdox3r"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      VCPKG_APPLOCAL_DEPS: "ON"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "C:/Program Files/vcpkg"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/Personal/Libros/Academia/Proyectos/Movimiento Browniano/Codigo/Impulsive_Leap_Frog/build/CMakeFiles/CMakeScratch/TryCompile-cdox3r'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/MSBuild/Current/Bin/MSBuild.exe" cmTC_6cad3.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
+        Microsoft (R) Build Engine versión 16.11.2+f32259642 para .NET Framework
+        Copyright (C) Microsoft Corporation. Todos los derechos reservados.
+        
+        Compilación iniciada a las 05/11/2023 13:57:26.
+        Proyecto "D:\\Personal\\Libros\\Academia\\Proyectos\\Movimiento Browniano\\Codigo\\Impulsive_Leap_Frog\\build\\CMakeFiles\\CMakeScratch\\TryCompile-cdox3r\\cmTC_6cad3.vcxproj" en nodo 1 (destinos predeterminados).
+        PrepareForBuild:
+          Creando directorio "cmTC_6cad3.dir\\Debug\\".
+          Creando directorio "D:\\Personal\\Libros\\Academia\\Proyectos\\Movimiento Browniano\\Codigo\\Impulsive_Leap_Frog\\build\\CMakeFiles\\CMakeScratch\\TryCompile-cdox3r\\Debug\\".
+          Creando directorio "cmTC_6cad3.dir\\Debug\\cmTC_6cad3.tlog\\".
+        InitializeBuildStatus:
+          Se creará "cmTC_6cad3.dir\\Debug\\cmTC_6cad3.tlog\\unsuccessfulbuild" porque se especificó "AlwaysCreate".
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_6cad3.dir\\Debug\\\\" /Fd"cmTC_6cad3.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.28\\Modules\\CMakeCCompilerABI.c"
+          Compilador de optimización de C/C++ de Microsoft (R) versión 19.29.30151 para x64
+          (C) Microsoft Corporation. Todos los derechos reservados.
+          CMakeCCompilerABI.c
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_6cad3.dir\\Debug\\\\" /Fd"cmTC_6cad3.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.28\\Modules\\CMakeCCompilerABI.c"
+        Link:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"D:\\Personal\\Libros\\Academia\\Proyectos\\Movimiento Browniano\\Codigo\\Impulsive_Leap_Frog\\build\\CMakeFiles\\CMakeScratch\\TryCompile-cdox3r\\Debug\\cmTC_6cad3.exe" /INCREMENTAL /ILK:"cmTC_6cad3.dir\\Debug\\cmTC_6cad3.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Personal/Libros/Academia/Proyectos/Movimiento Browniano/Codigo/Impulsive_Leap_Frog/build/CMakeFiles/CMakeScratch/TryCompile-cdox3r/Debug/cmTC_6cad3.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/Personal/Libros/Academia/Proyectos/Movimiento Browniano/Codigo/Impulsive_Leap_Frog/build/CMakeFiles/CMakeScratch/TryCompile-cdox3r/Debug/cmTC_6cad3.lib" /MACHINE:X64  /machine:x64 cmTC_6cad3.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_6cad3.vcxproj -> D:\\Personal\\Libros\\Academia\\Proyectos\\Movimiento Browniano\\Codigo\\Impulsive_Leap_Frog\\build\\CMakeFiles\\CMakeScratch\\TryCompile-cdox3r\\Debug\\cmTC_6cad3.exe
+        PostBuildEvent:
+          setlocal
+          C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -noprofile -executionpolicy Bypass -file "C:/Program Files/vcpkg/scripts/buildsystems/msbuild/applocal.ps1" -targetBinary "D:/Personal/Libros/Academia/Proyectos/Movimiento Browniano/Codigo/Impulsive_Leap_Frog/build/CMakeFiles/CMakeScratch/TryCompile-cdox3r/Debug/cmTC_6cad3.exe" -installedDir "C:/Program Files/vcpkg/installed/x64-windows/debug/bin" -OutVariable out
+          if %errorlevel% neq 0 goto :cmEnd
+          :cmEnd
+          endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+          :cmErrorLevel
+          exit /b %1
+          :cmDone
+          if %errorlevel% neq 0 goto :VCEnd
+          :VCEnd
+        FinalizeBuildStatus:
+          Se eliminará el archivo "cmTC_6cad3.dir\\Debug\\cmTC_6cad3.tlog\\unsuccessfulbuild".
+          Aplicando tarea Touch a "cmTC_6cad3.dir\\Debug\\cmTC_6cad3.tlog\\cmTC_6cad3.lastbuildstate".
+        Compilación del proyecto terminada "D:\\Personal\\Libros\\Academia\\Proyectos\\Movimiento Browniano\\Codigo\\Impulsive_Leap_Frog\\build\\CMakeFiles\\CMakeScratch\\TryCompile-cdox3r\\cmTC_6cad3.vcxproj" (destinos predeterminados).
+        
+        Compilación correcta.
+            0 Advertencia(s)
+            0 Errores
+        
+        Tiempo transcurrido 00:00:01.95
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "D:/Personal/Libros/Academia/Proyectos/Movimiento Browniano/Codigo/Impulsive_Leap_Frog/build/CMakeFiles/CMakeScratch/TryCompile-nl386p"
+      binary: "D:/Personal/Libros/Academia/Proyectos/Movimiento Browniano/Codigo/Impulsive_Leap_Frog/build/CMakeFiles/CMakeScratch/TryCompile-nl386p"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      VCPKG_APPLOCAL_DEPS: "ON"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "C:/Program Files/vcpkg"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/Personal/Libros/Academia/Proyectos/Movimiento Browniano/Codigo/Impulsive_Leap_Frog/build/CMakeFiles/CMakeScratch/TryCompile-nl386p'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/MSBuild/Current/Bin/MSBuild.exe" cmTC_cfa0e.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
+        Microsoft (R) Build Engine versión 16.11.2+f32259642 para .NET Framework
+        Copyright (C) Microsoft Corporation. Todos los derechos reservados.
+        
+        Compilación iniciada a las 05/11/2023 13:57:29.
+        Proyecto "D:\\Personal\\Libros\\Academia\\Proyectos\\Movimiento Browniano\\Codigo\\Impulsive_Leap_Frog\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nl386p\\cmTC_cfa0e.vcxproj" en nodo 1 (destinos predeterminados).
+        PrepareForBuild:
+          Creando directorio "cmTC_cfa0e.dir\\Debug\\".
+          Creando directorio "D:\\Personal\\Libros\\Academia\\Proyectos\\Movimiento Browniano\\Codigo\\Impulsive_Leap_Frog\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nl386p\\Debug\\".
+          Creando directorio "cmTC_cfa0e.dir\\Debug\\cmTC_cfa0e.tlog\\".
+        InitializeBuildStatus:
+          Se creará "cmTC_cfa0e.dir\\Debug\\cmTC_cfa0e.tlog\\unsuccessfulbuild" porque se especificó "AlwaysCreate".
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_cfa0e.dir\\Debug\\\\" /Fd"cmTC_cfa0e.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.28\\Modules\\CMakeCXXCompilerABI.cpp"
+          Compilador de optimización de C/C++ de Microsoft (R) versión 19.29.30151 para x64
+          (C) Microsoft Corporation. Todos los derechos reservados.
+          CMakeCXXCompilerABI.cpp
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_cfa0e.dir\\Debug\\\\" /Fd"cmTC_cfa0e.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.28\\Modules\\CMakeCXXCompilerABI.cpp"
+        Link:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"D:\\Personal\\Libros\\Academia\\Proyectos\\Movimiento Browniano\\Codigo\\Impulsive_Leap_Frog\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nl386p\\Debug\\cmTC_cfa0e.exe" /INCREMENTAL /ILK:"cmTC_cfa0e.dir\\Debug\\cmTC_cfa0e.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Personal/Libros/Academia/Proyectos/Movimiento Browniano/Codigo/Impulsive_Leap_Frog/build/CMakeFiles/CMakeScratch/TryCompile-nl386p/Debug/cmTC_cfa0e.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/Personal/Libros/Academia/Proyectos/Movimiento Browniano/Codigo/Impulsive_Leap_Frog/build/CMakeFiles/CMakeScratch/TryCompile-nl386p/Debug/cmTC_cfa0e.lib" /MACHINE:X64  /machine:x64 cmTC_cfa0e.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_cfa0e.vcxproj -> D:\\Personal\\Libros\\Academia\\Proyectos\\Movimiento Browniano\\Codigo\\Impulsive_Leap_Frog\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nl386p\\Debug\\cmTC_cfa0e.exe
+        PostBuildEvent:
+          setlocal
+          C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -noprofile -executionpolicy Bypass -file "C:/Program Files/vcpkg/scripts/buildsystems/msbuild/applocal.ps1" -targetBinary "D:/Personal/Libros/Academia/Proyectos/Movimiento Browniano/Codigo/Impulsive_Leap_Frog/build/CMakeFiles/CMakeScratch/TryCompile-nl386p/Debug/cmTC_cfa0e.exe" -installedDir "C:/Program Files/vcpkg/installed/x64-windows/debug/bin" -OutVariable out
+          if %errorlevel% neq 0 goto :cmEnd
+          :cmEnd
+          endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+          :cmErrorLevel
+          exit /b %1
+          :cmDone
+          if %errorlevel% neq 0 goto :VCEnd
+          :VCEnd
+        FinalizeBuildStatus:
+          Se eliminará el archivo "cmTC_cfa0e.dir\\Debug\\cmTC_cfa0e.tlog\\unsuccessfulbuild".
+          Aplicando tarea Touch a "cmTC_cfa0e.dir\\Debug\\cmTC_cfa0e.tlog\\cmTC_cfa0e.lastbuildstate".
+        Compilación del proyecto terminada "D:\\Personal\\Libros\\Academia\\Proyectos\\Movimiento Browniano\\Codigo\\Impulsive_Leap_Frog\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nl386p\\cmTC_cfa0e.vcxproj" (destinos predeterminados).
+        
+        Compilación correcta.
+            0 Advertencia(s)
+            0 Errores
+        
+        Tiempo transcurrido 00:00:01.95
+        
+      exitCode: 0
+...

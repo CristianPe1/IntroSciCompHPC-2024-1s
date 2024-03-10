@@ -16,5 +16,6 @@ _build
 #*.pdf
 *.o
 *.x
+*.code-workspace
 ##Carpeta de las tareas compañeros
 Tareas Compañeros/

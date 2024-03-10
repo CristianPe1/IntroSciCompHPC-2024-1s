@@ -1,7 +1,4 @@
-# Opciones de compilación
-CFLAGS = -std=c++11
-# Compilador
-CC = g++
+
 # Nombre del ejecutable
 
 DATA_FILES = random_pdf_seed_1.txt random_pdf_seed_2.txt random_pdf_seed_5.txt  # Lista de archivos de datos
