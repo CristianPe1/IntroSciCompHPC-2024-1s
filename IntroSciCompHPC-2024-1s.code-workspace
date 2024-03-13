@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"uri": "vscode-remote://codespaces+verbose-engine-qpjqww99g9wh9qvq/workspaces/IntroSciCompHPC-2024-1s"
+		}
+	],
+	"remoteAuthority": "codespaces+verbose-engine-qpjqww99g9wh9qvq",
+	"settings": {
+		"files.associations": {
+			"iostream": "cpp"
+		}
+	}
+}

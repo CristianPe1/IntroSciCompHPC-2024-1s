@@ -1,26 +1,3 @@
-<<<<<<< HEAD
-_build
-**/*DS_Store
-
-##Carpeta de los archivos temporales
-.tmp.drivedownload/
-.tmp.driveupload/
-##Ejecutables de Windows y Linux 
-*.exe
-*.out
-*.x
-*.o
-##Archivos de los datos
-*.dat
-*.txt
-*.csv
-#*.pdf
-*.o
-*.x
-*.code-workspace
-##Carpeta de las tareas compañeros
-Tareas Compañeros/
-=======
 _build
 **/*DS_Store
 
@@ -42,4 +19,3 @@ _build
 ##Carpeta de las tareas compañeros
 Tareas Compañeros/
 
->>>>>>> 75c7e289c8092d5eb5b52d58c14652b2397d810c
