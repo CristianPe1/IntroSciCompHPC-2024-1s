@@ -1,0 +1,12 @@
+all: main.x
+
+%.x: %.o
+    g++ $< -o $@
+
+%.o: %.cpp
+    g++ -c $<
+
+clean:
+    rm -f *.o *.x
+
+    
