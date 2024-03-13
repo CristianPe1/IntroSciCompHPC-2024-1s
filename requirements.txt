@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 jupyter-book==0.15.1
 matplotlib
 numpy
@@ -17,3 +18,26 @@ jupyterlab_vpython
 python-lsp-server
 pyright
 nb-js-diagrammers
+=======
+jupyter-book==0.15.1
+matplotlib
+numpy
+ghp-import
+jupyterlab-lsp
+jupyterlab-git
+pandas
+vpython
+ipython
+seaborn
+RISE
+pylint
+autopep8
+jupyter-collaboration
+jupyterlab-link-share
+jupyterlab_vpython
+python-lsp-server
+pyright
+nb-js-diagrammers
+gdbfrontend
+gdbgui
+>>>>>>> 75c7e289c8092d5eb5b52d58c14652b2397d810c
