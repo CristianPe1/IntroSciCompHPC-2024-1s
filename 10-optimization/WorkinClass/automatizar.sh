@@ -18,7 +18,7 @@ do
     # echo "n = $((potencia * 2))  n_size = $potencia"
     # echo $potencia+1  $potencia | ./flags.out
 
-    echo "n = $((potencia * 16))   n_size = $potencia"
-    echo $((potencia * 16)) | ./flags.out
+    echo "n = $((potencia * 16))   n_size = 2"
+    echo $((potencia * 16)) 2 | ./flags.out
     # make run nsize
 done
