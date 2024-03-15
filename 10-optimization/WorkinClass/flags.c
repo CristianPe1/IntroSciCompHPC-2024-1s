@@ -5,13 +5,23 @@
 #define min( a, b ) ( ((a) < (b)) ? (a) : (b) )
 
 int main(){
-    const int n = 512;
+    // const int n = 512;
     // const int csize = 32;
+    int n;
     int csize;
     // printf("Introduzca el valor de csize: ");
-    scanf("%d", &csize);
-    // printf("Gracias");
-    // cin<<"Ingrese el valor de csize: "<<csize<<"\n";
+    scanf("%d%d", &n, &csize);
+
+    //Si el usuario no introduce un número, scanf() devolverá 0, 
+    //por lo que podemos comprobar si se ha introducido un número 
+    //o no.
+    // if (scanf("%d", &csize) == NULL ) {
+    // // Manejo de error, por ejemplo:
+    // fprintf(stderr, "Error al leer el valor de csize.\n");
+    // return 1; // Salir del programa indicando fallo.
+    // }
+    //Hacerlo con un Try and Catch
+
     float ***a, ***b;
     clock_t cputime1, cputime2;
     int i,j,k,ii,jj,kk;
