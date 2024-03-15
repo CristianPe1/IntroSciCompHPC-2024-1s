@@ -1,12 +1,18 @@
+SHELL:=/bin/bash
+
 all: main.x
 
-%.x: %.o
-    g++ $< -o $@
+%.x: %.o factorial.o 
+	g++ $^ -o $@ -l 
+
+test_factorial.x: factorial_test.o factorial.o
+	g++ $^ -o $@ -l Catch2Main -l Catch2
+
+test: test_factorial.x
+	./test_factorial.x
 
 %.o: %.cpp
-    g++ -c $<
+	g++ -c $<
 
 clean:
-    rm -f *.o *.x
-
-    
+	rm -f *.o *.x
