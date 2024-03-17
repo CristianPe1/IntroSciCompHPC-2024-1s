@@ -3,6 +3,7 @@
     "files.associations": {
         "iostream": "cpp",
         "ostream": "cpp",
-        "time.h": "c"
+        "time.h": "c",
+        "vector": "cpp"
     }
 }
