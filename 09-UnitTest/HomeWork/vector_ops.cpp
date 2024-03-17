@@ -1,6 +1,4 @@
 #include "vector_ops.hpp"
-#include <cmath>
-#include <numeric>
 
 /**
  * @brief Calcula el promedio (media aritmética) de los valores en un vector de punto flotante.
@@ -21,7 +19,7 @@ double mean(const std::vector<double> & data)
   if (data.empty()) {
         return 0.0; 
     }
-    return std::accumulate(data.begin(), data.end(), 0.0) / data.size();
+  return std::accumulate(data.begin(), data.end(), 0.0) / data.size();
 }
 
 
