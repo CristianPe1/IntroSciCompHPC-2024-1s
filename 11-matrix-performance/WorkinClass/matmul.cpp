@@ -61,7 +61,5 @@ void multiply(const int size, double & wtime, double & ctime)
 
     std::clog << tmp << std::endl; // use the matrix to make eigen compute it
 
-    ctime = 1.0*(c2-c1)/CLOCKS_PER_SEC;
-    std::chrono::duration<double> elapsed_seconds = end-start;
-    wtime = elapsed_seconds.count();
+    
 }
