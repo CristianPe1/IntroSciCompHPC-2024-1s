@@ -1,0 +1,27 @@
+GCC = g++ 
+FLAGS = -O3 -std=c++17 -fopenmp
+
+TARGET = $(patsubst %.cpp, %_fopenmp, $(wildcard *.cpp))
+
+PARAMS = 100 500 1000
+# PARAMS = 100 500 1000 2000 3000 4000 5000 6000 7000 8000 9000 10000 
+NREPS = 2
+TREADHS = 1 2 4 8 
+
+all: weak_scaling
+
+TARGET.x: %.cpp
+	$(GCC) $(FLAGS) $< -o $@
+
+TARGET.txt: TARGET.x
+	$(COMMAND_PARALLEL)
+
+
+weak_scaling: 
+	command.sh
+# Mirar como hago prar que el sh reciba parametros
+# del sistema
+
+PHONY: clean
+clean:
+	rm -f *.x *.txt 
