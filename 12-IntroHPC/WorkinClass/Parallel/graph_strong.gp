@@ -1,7 +1,7 @@
 # Archivo gp para graficar los resultados de la estimación de 
 # tiempo de compilación vs. tamaño del sistema (escalamiento fuerte)
 set terminal pngcairo enhanced font 'Verdana,10'
-set output 'output.png'
+set output 'Metrics Strong Scaling.pdf'
 
 # Etiquetas y título del gráfico
 set title "Tiempo de compilación vs. Tamaño del sistema"

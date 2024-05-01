@@ -30,17 +30,13 @@ FORMAT = 'Real Time: %e\nUser Time: %U\nSystem Time: %S\nCPU usage: %P\nMax memo
 
 
 # WEAK_SCALING = ./$(TARGET).x {} $(NREPS) 1>> $(TARGET)_weak.txt 2>> /dev/null
-WEAK_SCALING = ./$(TARGET).x {} $(NREPS) 1
-STRONG_SCALING = ./$(TARGET).x {} $(NREPS) 1>> $(TARGET)_strong.txt 2>> /dev/null
+WEAK_SCALING = ./matmul.x {} $(NREPS) 1
+STRONG_SCALING = ./matmul.x {} $(NREPS) 1>> $(TARGET)_strong.txt 2>> /dev/null
 #Cambiar el nombre de matmul por el nombre del archivo que se quiera ejecutar
 #de manera que se pueda ejecutar cualquier archivo de la carpeta con el makefile
 
 
-COMMAND = /usr/bin/time --format=$(FORMAT) $(STRONG_SCALING)
-# COMMAND_PARALLEL = /usr/bin/time --format=$(FORMAT) parallel -j 8 '$(COMMAND) >> time_{}_output.txt' ::: $(PARAMS)
-# COMMAND_PARALLEL = /usr/bin/time --format=$(FORMAT) parallel -j 8 '$(COMMAND)' ::: $(PARAMS)
-
-COMMAND_PARALLEL = /usr/bin/time --format=$(FORMAT) parallel -j 8 '$(STRONG_SCALING)' ::: $(PARAMS)
+COMMAND_PARALLEL_STRONG = /usr/bin/time --format=$(FORMAT) parallel -j 8 '$(STRONG_SCALING)' ::: $(PARAMS)
 # Solo es posible usar /usr/bin/time una vez en el comando, si se quiere usar más de una vez
 # es necesario usar el comando time de bash, pero no se puede usar en paralelo
 # por lo que no se puede usar en el comando de parallel
@@ -53,11 +49,11 @@ COMMAND_PARALLEL = /usr/bin/time --format=$(FORMAT) parallel -j 8 '$(STRONG_SCAL
 
 all: $(TARGET:=.txt) graph_strong 
 
-%.x: %.cpp
+$(TARGET).x: $(TARGET).cpp
 	$(GCC) $(FLAGS) $< -o $@
 
-%.txt: %.x
-	$(COMMAND_PARALLEL)
+$(TARGET).txt: $(TARGET).x
+	$(COMMAND_PARALLEL_STRONG)
 #$(STRONG_SCALING)
 #$(COMMAND)
 #$(COMMAND_PARALLEL)
@@ -74,7 +70,7 @@ all: $(TARGET:=.txt) graph_strong
 
 
 weak_scaling: 
-	for treadh in $(TREADHS); do /usr/bin/time --format=$(FORMAT) parallel -j $$treadh '$(WEAK_SCALING)' ::: {1..10}; done
+	for treadh in $(TREADHS); do echo -n "$$treadh  ";/usr/bin/time --format=$(FORMAT) parallel -j $$treadh '$(WEAK_SCALING)' ::: {1..10}; done
 #Ejecutar el comando de weak scaling para cada uno de los hilos ejecutando el mismo archivo
 # un cierto número de veces y hacer la estadistica para cada uno de los hilos (mean, std, etc)
 # y guardarla en un archivo de texto
@@ -87,4 +83,4 @@ graph_strong: graph_strong.gp
 
 PHONY: clean
 clean:
-	rm -f *.x *.txt 
+	rm -f *.x *.txt *.out *.png *.pdf

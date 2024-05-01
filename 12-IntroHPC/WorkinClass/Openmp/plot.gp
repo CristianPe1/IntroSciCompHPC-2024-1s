@@ -1,5 +1,5 @@
 set term pdf size 3in,3in font "Times New Roman,10"
-set out "metrics.pdf"
+set out "Metrics Weak Scaling.pdf"
 
 set xlabel "nThreads"
 set ylabel "SpeedUp"
