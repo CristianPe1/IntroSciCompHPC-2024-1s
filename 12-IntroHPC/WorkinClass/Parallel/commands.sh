@@ -1,7 +1,8 @@
 
+#!/bin/bash 
 TARGET=matmul
-PARAMS="200"
-NREPS=2
+PARAMS=2000
+NREPS=8
 TREADHS="1 2 3 4 5 6 7 8"
 
 FORMAT='Real Time: %e\nUser Time: %U\nSystem Time: %S\nCPU usage: %P\nMax memory: %MkB\n'
@@ -16,7 +17,7 @@ WEAK_SCALING="./${TARGET}.x {} ${NREPS} 2> /dev/null"
 # Loop para ejecutar comandos
 for treadh in $TREADHS; do
     echo -n "$treadh  ";
-    /usr/bin/time --format="$FORMAT" parallel -j $treadh "$WEAK_SCALING" ::: "$PARAMS";
+    parallel -j $treadh $WEAK_SCALING ::: $PARAMS;
 done | tee matmul_weak.txt
 
 

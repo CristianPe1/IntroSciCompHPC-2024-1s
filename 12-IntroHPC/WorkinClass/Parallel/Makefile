@@ -21,8 +21,7 @@ FLAGS = -O3 -std=c++17
 
 TARGET = $(patsubst %.cpp, %, $(wildcard *.cpp))
 
-PARAMS = 100 500 1000
-# PARAMS = 100 500 1000 2000 3000 4000 5000 6000 7000 8000 9000 10000 
+PARAMS = 5000 10000 15000 20000 25000 
 NREPS = 2
 TREADHS = 1 2 4 8 
 
@@ -47,7 +46,7 @@ COMMAND_PARALLEL_STRONG = /usr/bin/time --format=$(FORMAT) parallel -j 8 '$(STRO
 
 
 
-all: $(TARGET:=.txt) graph_strong 
+all: $(TARGET:=.txt)  strong_scaling clean
 
 $(TARGET).x: $(TARGET).cpp
 	$(GCC) $(FLAGS) $< -o $@
@@ -70,17 +69,16 @@ $(TARGET).txt: $(TARGET).x
 
 
 weak_scaling: 
-	for treadh in $(TREADHS); do echo -n "$$treadh  ";/usr/bin/time --format=$(FORMAT) parallel -j $$treadh '$(WEAK_SCALING)' ::: {1..10}; done
+	./commands.sh
+#for treadh in $(TREADHS); do echo -n "$$treadh  ";/usr/bin/time --format=$(FORMAT) parallel -j $$treadh '$(WEAK_SCALING)' ::: {1..10}; done
 #Ejecutar el comando de weak scaling para cada uno de los hilos ejecutando el mismo archivo
 # un cierto número de veces y hacer la estadistica para cada uno de los hilos (mean, std, etc)
 # y guardarla en un archivo de texto
 
-graph_weak: weak_scaling
-	gnuplot graph_weak.gp
-
-graph_strong: graph_strong.gp
+strong_scaling: graph_strong.gp
 	gnuplot graph_strong.gp
+	
 
 PHONY: clean
 clean:
-	rm -f *.x *.txt *.out *.png *.pdf
+	rm -f *.x *.txt *.out 

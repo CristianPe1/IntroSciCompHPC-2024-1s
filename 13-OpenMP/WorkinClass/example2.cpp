@@ -25,3 +25,5 @@ int main(void)
 
   return 0;
 }
+
+// Compile command: g++ -fopenmp -fsanitize=thread example2.cpp
